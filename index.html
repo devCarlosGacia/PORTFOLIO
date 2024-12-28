@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="info-header">
+                <h1 class="header-title">Carlos Eduardo</h1>
+                <h2 class="header-subtitle">Portfolio of <span>Projects</span></h2>
+                <p class="header-description">Write something about yourself here. Keep it short, simple and include a
+                    bit of your personality!</p>
+            </div>
+            <div class="cards-header">
+                <div class="card-image">
+                </div>
+                <div class="card-color-1"></div>
+                <div class="card-color-2"></div>
+                <div class="card-color-3"></div>
+        </header>
+    </div>
+
+    <section class="technology">
+        <h3>Technology</h3>
+        <div class="tech-icons">
+            <img src="img/Unofficial_JavaScript_logo_2.svg 1.png" alt="JavaScript">
+            <img src="./img/download 2.png" alt="React">
+            <img src="./img/download 3.png" alt="SQL">
+            <img src="./img/Group 1.png" alt="CSS">
+            <img src="./img/Group 2.png" alt="HTML">
+            <img src="./img/download 1.png" alt="Python">
+            <img src="./img/download 4.png" alt="Node.js">
+        </div>
+    </section>
+
+
+
+    <section class="projects">
+        <h3>Projects</h3>
+        <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+    ">
+            <div class="project-list">
+                <div class="project-card">
+                    <h4>Hortifruit System for Delivery and E-commerce</h4>
+                    <p>Documentation of my graduation project, which was a system for a hortifruit delivery and
+                        e-commerce platform</p>
+                    <button id="download-btn">Documentation</button>
+
+                </div>
+            </div>
+
+                <section class="contact">
+                    <h3>Contact</h3>
+                    <button id="open-modal">your@email.com</button> <!-- ID corrigido -->
+                </section>
+                
+        </div>
+    </section>
+
+    <!-- Modal -->
+    
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Send an Email</h2>
+            <form id="contact-form">
+                <div>
+                    <label for="user_name">Nome:</label>
+                    <input type="text" id="user_name" name="from_name" required>
+                </div>
+                <div>
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de sucesso -->
+<!-- Notificação de sucesso -->
+<div id="success-notification" class="notification">
+    Mensagem enviada com sucesso!
+</div>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

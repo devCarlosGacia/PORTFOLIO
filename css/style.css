@@ -1,0 +1,332 @@
+/* styles.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  height: 80vh;
+}
+
+.info-header {
+  background-color: #ffffff20;
+  padding: 50px;
+  border-radius: 30px;
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+
+.header-text {
+  flex: 1 1 60%;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  color: #ffbe57;
+  font-weight: bold;
+}
+
+.header-subtitle {
+  font-size: 8.5rem;
+  margin: 10px 0;
+  color: #fff;
+  line-height: .9;
+}
+
+.header-subtitle span {
+  color: #ffbe57;
+  font-size: 139px;
+}
+
+.header-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.cards-header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 89% 29%;
+  padding: 10px;
+  width: 50%;
+  gap: 10px;
+  height: 61%;
+  position: relative;
+  /* top: -33px; */
+  bottom: 47px;
+}
+.cards-header > div {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-image {
+  grid-column: 1 / 3;
+  background-color: #b88beb;
+  background-image: url('../img/avatar-removebg-preview\ 1.svg');
+  background-size: cover;
+}
+
+.card-color-1 {
+  background-color: #ffbe57;
+
+}
+.card-color-2 {
+  background-color: #ffbe57;
+
+}
+.card-color-3 {
+  grid-column: 2 / 4;
+  background-color: #b88beb;
+}
+
+/* Technology Section */
+.technology {
+  margin-top: 40px;
+  background-color: #ffffff20;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.technology h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tech-icons img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Projects Section */
+.projects {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #2a2a40;
+  border-radius: 15px;
+  padding: 20px;
+  width: 360px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}  
+
+.project-card p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  background-color: #b88beb;
+  padding: 10px 72px;
+}
+
+.contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffbe57;
+  color: #000;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Modal */
+.modal {
+  display: none; /* Oculta o modal inicialmente */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Escurece o fundo */
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* Centraliza o modal verticalmente */
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%; /* Reduz o tamanho do modal */
+  max-width: 600px; /* Garante que o modal não fique muito largo em telas grandes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease; /* Suaviza o aparecimento do modal */
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px; /* Alinha o 'X' no canto superior direito */
+}
+
+.close:hover,
+.close:focus {
+  color: #ffbe57; /* Altera a cor do 'X' ao passar o mouse */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical; /* Permite que o campo de mensagem seja redimensionado */
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #ffbe57;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff8c1a; /* Altera a cor ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 80%; /* Aumenta o tamanho do modal em telas menores */
+  }
+}
+
+/* Notificação de sucesso */
+.notification {
+  position: fixed;
+  top: -50px; /* Começa acima da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  transition: top 1s ease, opacity 1s ease; /* Animação suave para descer e aparecer */
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Estilo para mostrar a notificação */
+.notification.show {
+  top: 20px; /* Posição final da notificação */
+  opacity: 1; /* Visível */
+}
+
+#open-modal, #download-btn{
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+#download-btn{
+  margin-top: 10px;
+}
